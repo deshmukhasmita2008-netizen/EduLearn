@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>EduLearn - MCQ Test</title>
+
+<style>
+    body { font-family: Arial; margin:0; }
+
+    header {
+        background:#2c3e50;
+        color:white;
+        text-align:center;
+        padding:15px;
+    }
+
+    .courses {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        padding:20px;
+    }
+
+    .card {
+        background:#ecf0f1;
+        margin:15px;
+        padding:15px;
+        width:250px;
+        border-radius:10px;
+        text-align:center;
+    }
+
+    iframe {
+        margin:10px;
+    }
+
+    section {
+        padding:30px;
+    }
+
+    button {
+        padding:8px 15px;
+        background:#2c3e50;
+        color:white;
+        border:none;
+        margin-top:10px;
+    }
+
+    .quiz {
+        background:#f4f4f4;
+        padding:20px;
+        border-radius:10px;
+        max-width:500px;
+        margin:auto;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>EduLearn</h1>
+    <p>Courses with MCQ Tests</p>
+</header>
+
+<!-- Courses -->
+<section class="courses">
+
+    <div class="card">
+        <h3>HTML</h3>
+        <a href="#html">Open Course</a>
+    </div>
+
+    <div class="card">
+        <h3>C</h3>
+        <a href="#c">Open Course</a>
+    </div>
+
+    <div class="card">
+        <h3>C++</h3>
+        <a href="#cpp">Open Course</a>
+    </div>
+
+</section>
+
+<!-- HTML Course -->
+<section id="html">
+    <h2>HTML Course</h2>
+
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/qz0aGYrrlhU"></iframe>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/UB1O30fR-EE"></iframe>
+
+    <br>
+    <a href="#htmlTest"><button>Proceed to Test</button></a>
+</section>
+
+<section id="htmlTest">
+    <h2>HTML MCQ Test</h2>
+
+    <div class="quiz">
+        <form>
+
+            <p>1. HTML stands for:</p>
+            <input type="radio" name="q1"> Hyper Text Markup Language<br>
+            <input type="radio" name="q1"> High Tech Modern Language<br>
+
+            <p>2. HTML is used for:</p>
+            <input type="radio" name="q2"> Web Pages<br>
+            <input type="radio" name="q2"> Database<br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+</section>
+
+<!-- C Course -->
+<section id="c">
+    <h2>C Programming</h2>
+
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/KJgsSFOSQv0"></iframe>
+
+    <br>
+    <a href="#cTest"><button>Proceed to Test</button></a>
+</section>
+
+<section id="cTest">
+    <h2>C MCQ Test</h2>
+
+    <div class="quiz">
+        <form>
+
+            <p>1. C is a:</p>
+            <input type="radio" name="q1"> Programming Language<br>
+            <input type="radio" name="q1"> Operating System<br>
+
+            <p>2. C was developed by:</p>
+            <input type="radio" name="q2"> Dennis Ritchie<br>
+            <input type="radio" name="q2"> James Gosling<br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+</section>
+
+<!-- C++ Course -->
+<section id="cpp">
+    <h2>C++ Programming</h2>
+
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/vLnPwxZdW4Y"></iframe>
+
+    <br>
+    <a href="#cppTest"><button>Proceed to Test</button></a>
+</section>
+
+<section id="cppTest">
+    <h2>C++ MCQ Test</h2>
+
+    <div class="quiz">
+        <form>
+
+            <p>1. C++ supports:</p>
+            <input type="radio" name="q1"> OOP<br>
+            <input type="radio" name="q1"> Only Procedural<br>
+
+            <p>2. C++ is extension of:</p>
+            <input type="radio" name="q2"> C Language<br>
+            <input type="radio" name="q2"> Python<br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+</section>
+
+</body>
+</html>
